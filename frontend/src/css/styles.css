@@ -1,0 +1,41 @@
+body {
+  background-color: #f0f0f0; /* Slight gray background */
+  margin: 0; /* To remove default margin */
+  height: 100vh; /* Ensure it covers the entire viewport */
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #1e30f3, #e21e80); /* Purple gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-gradient-primary-to-secondary {
+  background: #1e30f3;
+  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+}
+
+.land-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.land-button {
+  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.land-button:hover {
+  transform: scale(1.05);
+}
